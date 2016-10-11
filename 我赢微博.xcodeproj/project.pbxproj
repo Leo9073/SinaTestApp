@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B39028ED1DABD4C400860EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B39028EC1DABD4C400860EBF /* main.m */; };
+		B39028F01DABD4C400860EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B39028EF1DABD4C400860EBF /* AppDelegate.m */; };
+		B39028F81DABD4C400860EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39028F71DABD4C400860EBF /* Assets.xcassets */; };
+		B39028FB1DABD4C400860EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39028F91DABD4C400860EBF /* LaunchScreen.storyboard */; };
+		B39029211DABDB3F00860EBF /* WYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39029201DABDB3F00860EBF /* WYHomeViewController.m */; };
+		B39029271DABDBC100860EBF /* WYMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39029261DABDBC100860EBF /* WYMessageCenterViewController.m */; };
+		B390292A1DABDC2400860EBF /* WYProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39029291DABDC2400860EBF /* WYProfileViewController.m */; };
+		B390292D1DABDC8B00860EBF /* WYDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B390292C1DABDC8B00860EBF /* WYDiscoverViewController.m */; };
+		B39029301DABDD1400860EBF /* WYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B390292F1DABDD1400860EBF /* WYTabBarController.m */; };
+		B39029331DABDDA100860EBF /* WYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39029321DABDDA100860EBF /* WYNavigationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B39028E81DABD4C400860EBF /* 我赢微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我赢微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39028EC1DABD4C400860EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B39028EE1DABD4C400860EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B39028EF1DABD4C400860EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B39028F71DABD4C400860EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B39028FA1DABD4C400860EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B39028FC1DABD4C400860EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B390291F1DABDB3F00860EBF /* WYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYHomeViewController.h; path = Classes/Home/Controller/WYHomeViewController.h; sourceTree = "<group>"; };
+		B39029201DABDB3F00860EBF /* WYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYHomeViewController.m; path = Classes/Home/Controller/WYHomeViewController.m; sourceTree = "<group>"; };
+		B39029251DABDBC100860EBF /* WYMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYMessageCenterViewController.h; path = Classes/MessageCenter/Controller/WYMessageCenterViewController.h; sourceTree = "<group>"; };
+		B39029261DABDBC100860EBF /* WYMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYMessageCenterViewController.m; path = Classes/MessageCenter/Controller/WYMessageCenterViewController.m; sourceTree = "<group>"; };
+		B39029281DABDC2400860EBF /* WYProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYProfileViewController.h; path = Classes/Profile/Controller/WYProfileViewController.h; sourceTree = "<group>"; };
+		B39029291DABDC2400860EBF /* WYProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYProfileViewController.m; path = Classes/Profile/Controller/WYProfileViewController.m; sourceTree = "<group>"; };
+		B390292B1DABDC8B00860EBF /* WYDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYDiscoverViewController.h; path = Classes/Discover/Controller/WYDiscoverViewController.h; sourceTree = "<group>"; };
+		B390292C1DABDC8B00860EBF /* WYDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYDiscoverViewController.m; path = Classes/Discover/Controller/WYDiscoverViewController.m; sourceTree = "<group>"; };
+		B390292E1DABDD1400860EBF /* WYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYTabBarController.h; path = Classes/Main/Controller/WYTabBarController.h; sourceTree = "<group>"; };
+		B390292F1DABDD1400860EBF /* WYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYTabBarController.m; path = Classes/Main/Controller/WYTabBarController.m; sourceTree = "<group>"; };
+		B39029311DABDDA100860EBF /* WYNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYNavigationViewController.h; path = Classes/Main/Controller/WYNavigationViewController.h; sourceTree = "<group>"; };
+		B39029321DABDDA100860EBF /* WYNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYNavigationViewController.m; path = Classes/Main/Controller/WYNavigationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B39028E51DABD4C400860EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B39028DF1DABD4C400860EBF = {
+			isa = PBXGroup;
+			children = (
+				B39028EA1DABD4C400860EBF /* 我赢微博 */,
+				B39028E91DABD4C400860EBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B39028E91DABD4C400860EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B39028E81DABD4C400860EBF /* 我赢微博.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B39028EA1DABD4C400860EBF /* 我赢微博 */ = {
+			isa = PBXGroup;
+			children = (
+				B39029021DABD6BB00860EBF /* Classes */,
+				B39028F71DABD4C400860EBF /* Assets.xcassets */,
+				B39028F91DABD4C400860EBF /* LaunchScreen.storyboard */,
+				B39028FC1DABD4C400860EBF /* Info.plist */,
+				B39028EB1DABD4C400860EBF /* Supporting Files */,
+			);
+			path = "我赢微博";
+			sourceTree = "<group>";
+		};
+		B39028EB1DABD4C400860EBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B39028EC1DABD4C400860EBF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B39029021DABD6BB00860EBF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B39029141DABD82E00860EBF /* Discover */,
+				B39029101DABD80500860EBF /* Profile */,
+				B390290C1DABD7DC00860EBF /* MessageCenter */,
+				B39029081DABD78100860EBF /* Home */,
+				B39029031DABD6DC00860EBF /* Main */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B39029031DABD6DC00860EBF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B39029181DABD89100860EBF /* Other */,
+				B39029071DABD75400860EBF /* View */,
+				B39029061DABD73F00860EBF /* Model */,
+				B39029051DABD72000860EBF /* Controller */,
+				B39029041DABD71000860EBF /* Lib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B39029041DABD71000860EBF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		B39029051DABD72000860EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B390292E1DABDD1400860EBF /* WYTabBarController.h */,
+				B390292F1DABDD1400860EBF /* WYTabBarController.m */,
+				B39029311DABDDA100860EBF /* WYNavigationViewController.h */,
+				B39029321DABDDA100860EBF /* WYNavigationViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B39029061DABD73F00860EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B39029071DABD75400860EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B39029081DABD78100860EBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B390290B1DABD7B400860EBF /* View */,
+				B390290A1DABD7AE00860EBF /* Model */,
+				B39029091DABD7A200860EBF /* Controller */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		B39029091DABD7A200860EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B390291F1DABDB3F00860EBF /* WYHomeViewController.h */,
+				B39029201DABDB3F00860EBF /* WYHomeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B390290A1DABD7AE00860EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B390290B1DABD7B400860EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B390290C1DABD7DC00860EBF /* MessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B390290F1DABD7FB00860EBF /* View */,
+				B390290E1DABD7F500860EBF /* Model */,
+				B390290D1DABD7EB00860EBF /* Controller */,
+			);
+			name = MessageCenter;
+			sourceTree = "<group>";
+		};
+		B390290D1DABD7EB00860EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B39029251DABDBC100860EBF /* WYMessageCenterViewController.h */,
+				B39029261DABDBC100860EBF /* WYMessageCenterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B390290E1DABD7F500860EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B390290F1DABD7FB00860EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B39029101DABD80500860EBF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B39029131DABD82400860EBF /* View */,
+				B39029121DABD81F00860EBF /* Model */,
+				B39029111DABD81700860EBF /* Controller */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		B39029111DABD81700860EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B39029281DABDC2400860EBF /* WYProfileViewController.h */,
+				B39029291DABDC2400860EBF /* WYProfileViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B39029121DABD81F00860EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B39029131DABD82400860EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B39029141DABD82E00860EBF /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B39029171DABD85900860EBF /* View */,
+				B39029161DABD85200860EBF /* Model */,
+				B39029151DABD84900860EBF /* Controller */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		B39029151DABD84900860EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B390292B1DABDC8B00860EBF /* WYDiscoverViewController.h */,
+				B390292C1DABDC8B00860EBF /* WYDiscoverViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B39029161DABD85200860EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B39029171DABD85900860EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B39029181DABD89100860EBF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B39028EE1DABD4C400860EBF /* AppDelegate.h */,
+				B39028EF1DABD4C400860EBF /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B39028E71DABD4C400860EBF /* 我赢微博 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39028FF1DABD4C400860EBF /* Build configuration list for PBXNativeTarget "我赢微博" */;
+			buildPhases = (
+				B39028E41DABD4C400860EBF /* Sources */,
+				B39028E51DABD4C400860EBF /* Frameworks */,
+				B39028E61DABD4C400860EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "我赢微博";
+			productName = "我赢微博";
+			productReference = B39028E81DABD4C400860EBF /* 我赢微博.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B39028E01DABD4C400860EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Leo;
+				TargetAttributes = {
+					B39028E71DABD4C400860EBF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = B39028E31DABD4C400860EBF /* Build configuration list for PBXProject "我赢微博" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B39028DF1DABD4C400860EBF;
+			productRefGroup = B39028E91DABD4C400860EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B39028E71DABD4C400860EBF /* 我赢微博 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B39028E61DABD4C400860EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39028FB1DABD4C400860EBF /* LaunchScreen.storyboard in Resources */,
+				B39028F81DABD4C400860EBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39028E41DABD4C400860EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39029211DABDB3F00860EBF /* WYHomeViewController.m in Sources */,
+				B39028F01DABD4C400860EBF /* AppDelegate.m in Sources */,
+				B390292A1DABDC2400860EBF /* WYProfileViewController.m in Sources */,
+				B39028ED1DABD4C400860EBF /* main.m in Sources */,
+				B39029271DABDBC100860EBF /* WYMessageCenterViewController.m in Sources */,
+				B390292D1DABDC8B00860EBF /* WYDiscoverViewController.m in Sources */,
+				B39029331DABDDA100860EBF /* WYNavigationViewController.m in Sources */,
+				B39029301DABDD1400860EBF /* WYTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B39028F91DABD4C400860EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39028FA1DABD4C400860EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B39028FD1DABD4C400860EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B39028FE1DABD4C400860EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B39029001DABD4C400860EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "我赢微博/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Leo.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B39029011DABD4C400860EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "我赢微博/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Leo.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B39028E31DABD4C400860EBF /* Build configuration list for PBXProject "我赢微博" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39028FD1DABD4C400860EBF /* Debug */,
+				B39028FE1DABD4C400860EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39028FF1DABD4C400860EBF /* Build configuration list for PBXNativeTarget "我赢微博" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39029001DABD4C400860EBF /* Debug */,
+				B39029011DABD4C400860EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B39028E01DABD4C400860EBF /* Project object */;
+}
