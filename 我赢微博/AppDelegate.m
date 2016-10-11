@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WYTabBarController.h"
+#import "WYNewFeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //1、创建主窗口
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    _window.rootViewController = [[WYTabBarController alloc]init];
+    WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
+    _window.rootViewController = rootVC;
     [_window makeKeyAndVisible];
     return YES;
 }

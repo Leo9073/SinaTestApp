@@ -12,6 +12,7 @@
 #import "WYDiscoverViewController.h"
 #import "WYMessageCenterViewController.h"
 #import "WYNavigationViewController.h"
+#import "WYTabBar.h"
 
 @interface WYTabBarController ()
 
@@ -34,6 +35,11 @@
     
     WYProfileViewController *profileVC = [[WYProfileViewController alloc]init];
     [self addChildWithController:profileVC andTitle:@"我" andImageName:@"tabbar_profile" andSelecterImageName:@"tabbar_profile_selected"];
+    
+    //将自定义的按钮添加到tabBar
+    WYTabBar *tabBar = [[WYTabBar alloc]init];
+    //使用KVC模式对只读属性修改
+    [self setValue:tabBar forKey:@"tabBar"];
 }
 
 //提取方法的原则：把共同的放到方法中，不同的当作参数来传递

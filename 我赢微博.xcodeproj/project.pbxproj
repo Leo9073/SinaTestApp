@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B36C8B921DAD0958004945AC /* WYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C8B911DAD0958004945AC /* WYTabBar.m */; };
+		B36C8B961DAD0BF3004945AC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C8B951DAD0BF3004945AC /* UIView+Extension.m */; };
+		B36C8B9B1DAD19FE004945AC /* WYNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C8B9A1DAD19FE004945AC /* WYNewFeatureViewController.m */; };
 		B39028ED1DABD4C400860EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B39028EC1DABD4C400860EBF /* main.m */; };
 		B39028F01DABD4C400860EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B39028EF1DABD4C400860EBF /* AppDelegate.m */; };
 		B39028F81DABD4C400860EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39028F71DABD4C400860EBF /* Assets.xcassets */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B36C8B901DAD0958004945AC /* WYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYTabBar.h; path = Classes/Main/View/WYTabBar.h; sourceTree = "<group>"; };
+		B36C8B911DAD0958004945AC /* WYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYTabBar.m; path = Classes/Main/View/WYTabBar.m; sourceTree = "<group>"; };
+		B36C8B941DAD0BF3004945AC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "Classes/Main/Category/UIView+Extension.h"; sourceTree = "<group>"; };
+		B36C8B951DAD0BF3004945AC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "Classes/Main/Category/UIView+Extension.m"; sourceTree = "<group>"; };
+		B36C8B991DAD19FE004945AC /* WYNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYNewFeatureViewController.h; path = Classes/NewFeature/Controller/WYNewFeatureViewController.h; sourceTree = "<group>"; };
+		B36C8B9A1DAD19FE004945AC /* WYNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYNewFeatureViewController.m; path = Classes/NewFeature/Controller/WYNewFeatureViewController.m; sourceTree = "<group>"; };
 		B39028E81DABD4C400860EBF /* 我赢微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我赢微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39028EC1DABD4C400860EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B39028EE1DABD4C400860EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +61,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B36C8B931DAD0B71004945AC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B36C8B941DAD0BF3004945AC /* UIView+Extension.h */,
+				B36C8B951DAD0BF3004945AC /* UIView+Extension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		B36C8B971DAD19A7004945AC /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				B36C8B981DAD19B6004945AC /* Controller */,
+			);
+			name = NewFeature;
+			sourceTree = "<group>";
+		};
+		B36C8B981DAD19B6004945AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B36C8B991DAD19FE004945AC /* WYNewFeatureViewController.h */,
+				B36C8B9A1DAD19FE004945AC /* WYNewFeatureViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		B39028DF1DABD4C400860EBF = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +126,7 @@
 		B39029021DABD6BB00860EBF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B36C8B971DAD19A7004945AC /* NewFeature */,
 				B39029141DABD82E00860EBF /* Discover */,
 				B39029101DABD80500860EBF /* Profile */,
 				B390290C1DABD7DC00860EBF /* MessageCenter */,
@@ -103,6 +139,7 @@
 		B39029031DABD6DC00860EBF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B36C8B931DAD0B71004945AC /* Category */,
 				B39029181DABD89100860EBF /* Other */,
 				B39029071DABD75400860EBF /* View */,
 				B39029061DABD73F00860EBF /* Model */,
@@ -140,6 +177,8 @@
 		B39029071DABD75400860EBF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B36C8B901DAD0958004945AC /* WYTabBar.h */,
+				B36C8B911DAD0958004945AC /* WYTabBar.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -354,10 +393,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36C8B961DAD0BF3004945AC /* UIView+Extension.m in Sources */,
 				B39029211DABDB3F00860EBF /* WYHomeViewController.m in Sources */,
 				B39028F01DABD4C400860EBF /* AppDelegate.m in Sources */,
 				B390292A1DABDC2400860EBF /* WYProfileViewController.m in Sources */,
+				B36C8B9B1DAD19FE004945AC /* WYNewFeatureViewController.m in Sources */,
 				B39028ED1DABD4C400860EBF /* main.m in Sources */,
+				B36C8B921DAD0958004945AC /* WYTabBar.m in Sources */,
 				B39029271DABDBC100860EBF /* WYMessageCenterViewController.m in Sources */,
 				B390292D1DABDC8B00860EBF /* WYDiscoverViewController.m in Sources */,
 				B39029331DABDDA100860EBF /* WYNavigationViewController.m in Sources */,
@@ -502,6 +544,7 @@
 				B39029011DABD4C400860EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
