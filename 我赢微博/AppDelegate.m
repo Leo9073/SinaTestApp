@@ -20,8 +20,33 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //1、创建主窗口
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
-    _window.rootViewController = rootVC;
+    
+    //获取沙盒路径document
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    path = [path stringByAppendingPathComponent:@"version.plist"];
+    //获取当前应用程序的版本号
+    NSDictionary *dict = [NSBundle mainBundle].infoDictionary;
+    NSString *currentVersion = dict[@"CFBundleVersion"];
+    NSMutableDictionary *oldVersionDict = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+    if (oldVersionDict) { //文件存在，则不是第一次安装
+        NSString *oldVersion = oldVersionDict[@"CFBundleVersion"];
+        if (![currentVersion isEqualToString:oldVersion]) {
+            WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
+            _window.rootViewController = rootVC;
+            //保存当前的版本
+            oldVersionDict[@"CFBundleVersion"] = currentVersion;
+            [oldVersionDict writeToFile:path atomically:YES];
+        } else {
+            WYTabBarController *rootVC = [[WYTabBarController alloc]init];
+            _window.rootViewController = rootVC;
+        }
+    } else { //第一次安装
+        WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
+        _window.rootViewController = rootVC;
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        dict[@"CFBundleVersion"] = currentVersion;
+        [dict writeToFile:path atomically:YES];
+    }
     [_window makeKeyAndVisible];
     return YES;
 }
