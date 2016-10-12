@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "WYTabBarController.h"
 #import "WYNewFeatureViewController.h"
+#import "WYOAuthViewController.h"
+#import "WYAccountTool.h"
+#import "WYAccount.h"
 
 @interface AppDelegate ()
 
@@ -21,31 +24,40 @@
     //1、创建主窗口
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    //获取沙盒路径document
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    path = [path stringByAppendingPathComponent:@"version.plist"];
-    //获取当前应用程序的版本号
-    NSDictionary *dict = [NSBundle mainBundle].infoDictionary;
-    NSString *currentVersion = dict[@"CFBundleVersion"];
-    NSMutableDictionary *oldVersionDict = [NSMutableDictionary dictionaryWithContentsOfFile:path];
-    if (oldVersionDict) { //文件存在，则不是第一次安装
-        NSString *oldVersion = oldVersionDict[@"CFBundleVersion"];
-        if (![currentVersion isEqualToString:oldVersion]) {
+    WYAccount *account = [WYAccountTool account];
+    if (account) { //如果账号存在，说明已经登录过
+        //获取沙盒路径document
+        NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+        path = [path stringByAppendingPathComponent:@"version.plist"];
+        //获取当前应用程序的版本号
+        NSDictionary *dict = [NSBundle mainBundle].infoDictionary;
+        NSString *currentVersion = dict[@"CFBundleVersion"];
+        NSMutableDictionary *oldVersionDict = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+        if (oldVersionDict) { //文件存在，则不是第一次安装
+            NSString *oldVersion = oldVersionDict[@"CFBundleVersion"];
+            if (![currentVersion isEqualToString:oldVersion]) {
+                //如果两个版本号不相同，则显示新特性
+                WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
+                _window.rootViewController = rootVC;
+                //保存当前的版本
+                oldVersionDict[@"CFBundleVersion"] = currentVersion;
+                [oldVersionDict writeToFile:path atomically:YES];
+            } else {
+                //否则直接显示主窗口
+                WYTabBarController *rootVC = [[WYTabBarController alloc]init];
+                _window.rootViewController = rootVC;
+            }
+        } else { //第一次安装，需要显示新特性，并保存版本号
             WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
             _window.rootViewController = rootVC;
-            //保存当前的版本
-            oldVersionDict[@"CFBundleVersion"] = currentVersion;
-            [oldVersionDict writeToFile:path atomically:YES];
-        } else {
-            WYTabBarController *rootVC = [[WYTabBarController alloc]init];
-            _window.rootViewController = rootVC;
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            dict[@"CFBundleVersion"] = currentVersion;
+            [dict writeToFile:path atomically:YES];
         }
-    } else { //第一次安装
-        WYNewFeatureViewController *rootVC = [[WYNewFeatureViewController alloc]init];
-        _window.rootViewController = rootVC;
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        dict[@"CFBundleVersion"] = currentVersion;
-        [dict writeToFile:path atomically:YES];
+    } else { //没有登录过，到授权页面，同时需要显示新特性
+        //将授权页面设置为根控制器
+        WYOAuthViewController *rootViewController = [[WYOAuthViewController alloc]init];
+        _window.rootViewController = rootViewController;
     }
     [_window makeKeyAndVisible];
     return YES;

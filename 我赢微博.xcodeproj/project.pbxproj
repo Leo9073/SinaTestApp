@@ -10,6 +10,15 @@
 		B36C8B921DAD0958004945AC /* WYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C8B911DAD0958004945AC /* WYTabBar.m */; };
 		B36C8B961DAD0BF3004945AC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C8B951DAD0BF3004945AC /* UIView+Extension.m */; };
 		B36C8B9B1DAD19FE004945AC /* WYNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C8B9A1DAD19FE004945AC /* WYNewFeatureViewController.m */; };
+		B38BF21E1DAE05040016DABF /* WYOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF21D1DAE05040016DABF /* WYOAuthViewController.m */; };
+		B38BF2431DAE11FF0016DABF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF2371DAE11FF0016DABF /* AFHTTPSessionManager.m */; };
+		B38BF2441DAE11FF0016DABF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF23A1DAE11FF0016DABF /* AFNetworkReachabilityManager.m */; };
+		B38BF2451DAE11FF0016DABF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF23C1DAE11FF0016DABF /* AFSecurityPolicy.m */; };
+		B38BF2461DAE11FF0016DABF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF23E1DAE11FF0016DABF /* AFURLRequestSerialization.m */; };
+		B38BF2471DAE11FF0016DABF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF2401DAE11FF0016DABF /* AFURLResponseSerialization.m */; };
+		B38BF2481DAE11FF0016DABF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF2421DAE11FF0016DABF /* AFURLSessionManager.m */; };
+		B38BF24F1DAE21FE0016DABF /* WYAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF24E1DAE21FE0016DABF /* WYAccount.m */; };
+		B38BF2531DAE23780016DABF /* WYAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BF2521DAE23780016DABF /* WYAccountTool.m */; };
 		B39028ED1DABD4C400860EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B39028EC1DABD4C400860EBF /* main.m */; };
 		B39028F01DABD4C400860EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B39028EF1DABD4C400860EBF /* AppDelegate.m */; };
 		B39028F81DABD4C400860EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39028F71DABD4C400860EBF /* Assets.xcassets */; };
@@ -20,6 +29,8 @@
 		B390292D1DABDC8B00860EBF /* WYDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B390292C1DABDC8B00860EBF /* WYDiscoverViewController.m */; };
 		B39029301DABDD1400860EBF /* WYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B390292F1DABDD1400860EBF /* WYTabBarController.m */; };
 		B39029331DABDDA100860EBF /* WYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39029321DABDDA100860EBF /* WYNavigationViewController.m */; };
+		B3FF4F041DAE34530083809C /* WYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FF4F031DAE34530083809C /* WYUser.m */; };
+		B3FF4F071DAE346F0083809C /* WYStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FF4F061DAE346F0083809C /* WYStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,25 @@
 		B36C8B951DAD0BF3004945AC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "Classes/Main/Category/UIView+Extension.m"; sourceTree = "<group>"; };
 		B36C8B991DAD19FE004945AC /* WYNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYNewFeatureViewController.h; path = Classes/NewFeature/Controller/WYNewFeatureViewController.h; sourceTree = "<group>"; };
 		B36C8B9A1DAD19FE004945AC /* WYNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYNewFeatureViewController.m; path = Classes/NewFeature/Controller/WYNewFeatureViewController.m; sourceTree = "<group>"; };
+		B38BF21C1DAE05040016DABF /* WYOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYOAuthViewController.h; path = Classes/OAuth/Controller/WYOAuthViewController.h; sourceTree = "<group>"; };
+		B38BF21D1DAE05040016DABF /* WYOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYOAuthViewController.m; path = Classes/OAuth/Controller/WYOAuthViewController.m; sourceTree = "<group>"; };
+		B38BF2361DAE11FF0016DABF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		B38BF2371DAE11FF0016DABF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		B38BF2381DAE11FF0016DABF /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		B38BF2391DAE11FF0016DABF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		B38BF23A1DAE11FF0016DABF /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		B38BF23B1DAE11FF0016DABF /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		B38BF23C1DAE11FF0016DABF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		B38BF23D1DAE11FF0016DABF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		B38BF23E1DAE11FF0016DABF /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		B38BF23F1DAE11FF0016DABF /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		B38BF2401DAE11FF0016DABF /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		B38BF2411DAE11FF0016DABF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		B38BF2421DAE11FF0016DABF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		B38BF24D1DAE21FE0016DABF /* WYAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYAccount.h; path = Classes/OAuth/Model/WYAccount.h; sourceTree = "<group>"; };
+		B38BF24E1DAE21FE0016DABF /* WYAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYAccount.m; path = Classes/OAuth/Model/WYAccount.m; sourceTree = "<group>"; };
+		B38BF2511DAE23780016DABF /* WYAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYAccountTool.h; path = Classes/OAuth/AccountTool/WYAccountTool.h; sourceTree = "<group>"; };
+		B38BF2521DAE23780016DABF /* WYAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYAccountTool.m; path = Classes/OAuth/AccountTool/WYAccountTool.m; sourceTree = "<group>"; };
 		B39028E81DABD4C400860EBF /* 我赢微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我赢微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39028EC1DABD4C400860EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B39028EE1DABD4C400860EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +78,10 @@
 		B390292F1DABDD1400860EBF /* WYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYTabBarController.m; path = Classes/Main/Controller/WYTabBarController.m; sourceTree = "<group>"; };
 		B39029311DABDDA100860EBF /* WYNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYNavigationViewController.h; path = Classes/Main/Controller/WYNavigationViewController.h; sourceTree = "<group>"; };
 		B39029321DABDDA100860EBF /* WYNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYNavigationViewController.m; path = Classes/Main/Controller/WYNavigationViewController.m; sourceTree = "<group>"; };
+		B3FF4F021DAE34530083809C /* WYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYUser.h; path = Classes/Home/Model/WYUser.h; sourceTree = "<group>"; };
+		B3FF4F031DAE34530083809C /* WYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYUser.m; path = Classes/Home/Model/WYUser.m; sourceTree = "<group>"; };
+		B3FF4F051DAE346F0083809C /* WYStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYStatus.h; path = Classes/Home/Model/WYStatus.h; sourceTree = "<group>"; };
+		B3FF4F061DAE346F0083809C /* WYStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYStatus.m; path = Classes/Home/Model/WYStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +119,71 @@
 				B36C8B9A1DAD19FE004945AC /* WYNewFeatureViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		B38BF21A1DAE04B70016DABF /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B38BF2501DAE23320016DABF /* AccountTool */,
+				B38BF24C1DAE215B0016DABF /* Model */,
+				B38BF21B1DAE04D60016DABF /* Controller */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		B38BF21B1DAE04D60016DABF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B38BF21C1DAE05040016DABF /* WYOAuthViewController.h */,
+				B38BF21D1DAE05040016DABF /* WYOAuthViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B38BF2341DAE119D0016DABF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B38BF2351DAE11FF0016DABF /* AFNetworking */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		B38BF2351DAE11FF0016DABF /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B38BF2361DAE11FF0016DABF /* AFHTTPSessionManager.h */,
+				B38BF2371DAE11FF0016DABF /* AFHTTPSessionManager.m */,
+				B38BF2381DAE11FF0016DABF /* AFNetworking.h */,
+				B38BF2391DAE11FF0016DABF /* AFNetworkReachabilityManager.h */,
+				B38BF23A1DAE11FF0016DABF /* AFNetworkReachabilityManager.m */,
+				B38BF23B1DAE11FF0016DABF /* AFSecurityPolicy.h */,
+				B38BF23C1DAE11FF0016DABF /* AFSecurityPolicy.m */,
+				B38BF23D1DAE11FF0016DABF /* AFURLRequestSerialization.h */,
+				B38BF23E1DAE11FF0016DABF /* AFURLRequestSerialization.m */,
+				B38BF23F1DAE11FF0016DABF /* AFURLResponseSerialization.h */,
+				B38BF2401DAE11FF0016DABF /* AFURLResponseSerialization.m */,
+				B38BF2411DAE11FF0016DABF /* AFURLSessionManager.h */,
+				B38BF2421DAE11FF0016DABF /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B38BF24C1DAE215B0016DABF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B38BF24D1DAE21FE0016DABF /* WYAccount.h */,
+				B38BF24E1DAE21FE0016DABF /* WYAccount.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B38BF2501DAE23320016DABF /* AccountTool */ = {
+			isa = PBXGroup;
+			children = (
+				B38BF2511DAE23780016DABF /* WYAccountTool.h */,
+				B38BF2521DAE23780016DABF /* WYAccountTool.m */,
+			);
+			name = AccountTool;
 			sourceTree = "<group>";
 		};
 		B39028DF1DABD4C400860EBF = {
@@ -126,6 +225,7 @@
 		B39029021DABD6BB00860EBF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B38BF21A1DAE04B70016DABF /* OAuth */,
 				B36C8B971DAD19A7004945AC /* NewFeature */,
 				B39029141DABD82E00860EBF /* Discover */,
 				B39029101DABD80500860EBF /* Profile */,
@@ -139,21 +239,14 @@
 		B39029031DABD6DC00860EBF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B38BF2341DAE119D0016DABF /* Lib */,
 				B36C8B931DAD0B71004945AC /* Category */,
 				B39029181DABD89100860EBF /* Other */,
 				B39029071DABD75400860EBF /* View */,
 				B39029061DABD73F00860EBF /* Model */,
 				B39029051DABD72000860EBF /* Controller */,
-				B39029041DABD71000860EBF /* Lib */,
 			);
 			name = Main;
-			sourceTree = "<group>";
-		};
-		B39029041DABD71000860EBF /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Lib;
 			sourceTree = "<group>";
 		};
 		B39029051DABD72000860EBF /* Controller */ = {
@@ -205,6 +298,10 @@
 		B390290A1DABD7AE00860EBF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3FF4F021DAE34530083809C /* WYUser.h */,
+				B3FF4F031DAE34530083809C /* WYUser.m */,
+				B3FF4F051DAE346F0083809C /* WYStatus.h */,
+				B3FF4F061DAE346F0083809C /* WYStatus.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -394,16 +491,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36C8B961DAD0BF3004945AC /* UIView+Extension.m in Sources */,
+				B38BF2451DAE11FF0016DABF /* AFSecurityPolicy.m in Sources */,
+				B38BF24F1DAE21FE0016DABF /* WYAccount.m in Sources */,
 				B39029211DABDB3F00860EBF /* WYHomeViewController.m in Sources */,
+				B3FF4F041DAE34530083809C /* WYUser.m in Sources */,
 				B39028F01DABD4C400860EBF /* AppDelegate.m in Sources */,
 				B390292A1DABDC2400860EBF /* WYProfileViewController.m in Sources */,
 				B36C8B9B1DAD19FE004945AC /* WYNewFeatureViewController.m in Sources */,
 				B39028ED1DABD4C400860EBF /* main.m in Sources */,
+				B38BF2461DAE11FF0016DABF /* AFURLRequestSerialization.m in Sources */,
+				B38BF2531DAE23780016DABF /* WYAccountTool.m in Sources */,
+				B38BF21E1DAE05040016DABF /* WYOAuthViewController.m in Sources */,
+				B38BF2481DAE11FF0016DABF /* AFURLSessionManager.m in Sources */,
 				B36C8B921DAD0958004945AC /* WYTabBar.m in Sources */,
 				B39029271DABDBC100860EBF /* WYMessageCenterViewController.m in Sources */,
 				B390292D1DABDC8B00860EBF /* WYDiscoverViewController.m in Sources */,
+				B38BF2471DAE11FF0016DABF /* AFURLResponseSerialization.m in Sources */,
+				B38BF2441DAE11FF0016DABF /* AFNetworkReachabilityManager.m in Sources */,
 				B39029331DABDDA100860EBF /* WYNavigationViewController.m in Sources */,
 				B39029301DABDD1400860EBF /* WYTabBarController.m in Sources */,
+				B38BF2431DAE11FF0016DABF /* AFHTTPSessionManager.m in Sources */,
+				B3FF4F071DAE346F0083809C /* WYStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
