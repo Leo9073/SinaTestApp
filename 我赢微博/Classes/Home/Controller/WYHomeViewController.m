@@ -68,9 +68,9 @@
         
         //        NSLog(@"%@",responseObject);
 //        self.statusArr = responseObject[@"statuses"];
-        [responseObject enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [self.statusArr addObject:obj];
-        }];
+//        [responseObject enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            [self.statusArr addObject:obj];
+//        }];
 //        [self.tableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
